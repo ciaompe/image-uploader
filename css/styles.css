@@ -1,0 +1,77 @@
+body {
+	margin-top: 50px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.image-upload-panel {
+	padding: 8px !important;
+}
+
+.image-list{
+	margin: 0px; padding: 0px; list-style: none; width: 100%;
+}
+
+.image-list li {
+	width: 150px; height: 150px; float: left; margin: 10px; display: block; overflow: hidden;
+	position: relative; border-radius: 4px;
+}
+
+.image-list li img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.upload-image-progress {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.upload-image-content {
+	position: absolute;
+	top: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, 0.7);
+	display: none;
+	text-align: center;
+}
+
+.upload-image-content i{
+	font-size: 28px; color: red;
+	position:relative;
+    top: calc(50% - 24px); /* 50% - 3/4 of icon height */
+    cursor: pointer;
+}
+
+.image-list li:hover .upload-image-content {
+	display: block;
+}
+
+ .progress {
+	margin-bottom: 0; height: 12px;
+}
+
+.upload-image-progress .progress-bar {
+	background-color: #5cb85c; line-height: 10px;
+}
+
+.image-list li.upload-image {
+	background: #e1e1e1; text-align: center;
+}
+
+.image-list li.upload-image label {
+	width: 100%; height: 100%; display: block; cursor: pointer;
+}
+
+.image-list li.upload-image i{
+	font-size: 48px; color: #fff;
+	position:relative;
+    top: calc(50% - 28.89px); /* 50% - 3/4 of icon height */
+}
