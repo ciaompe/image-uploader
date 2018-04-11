@@ -142,8 +142,6 @@
   {
     this.status = FileStatus.COMPLETED;
     this.widget.settings.onUploadSuccess.call(this.widget.element, this.id, data);
-
-    UploadCount = UploadCount + 1;
   };
 
   DmUploaderFile.prototype.onError = function(xhr, status, errMsg)
@@ -486,6 +484,8 @@
       }
 
       this.queue.push(file);
+      
+      UploadCount = UploadCount + 1;
       
       nFiles++;
     }
